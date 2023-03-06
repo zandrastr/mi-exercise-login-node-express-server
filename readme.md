@@ -33,4 +33,5 @@ När sidan laddas om så skall ett välkomstmeddelande visas istället för inlo
 - npx express-generator --no-view
 - npm i 
 - nodemon start
+- solve cors problem: npm i cors ---> in app.js: const cors = require("cors"); and app.use(cors());
 

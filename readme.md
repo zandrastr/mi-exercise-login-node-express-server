@@ -28,3 +28,9 @@ let users = [
 
 Vid lyckad inloggning, spara besökarens ID i localStorage.  
 När sidan laddas om så skall ett välkomstmeddelande visas istället för inloggningsformuläret till besökaren samt en logga ut knapp som raderar ID ur localStorage.
+
+#### Step by step
+- npx express-generator --no-view
+- npm i 
+- nodemon start
+

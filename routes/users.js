@@ -23,4 +23,17 @@ router.post('/', function(req, res, next) {
   res.json(users);
 });
 
+// POST route login
+router.post('/login', function(req, res, next) {
+  const {name, password} = req.body;
+  const foundUser = users.find(user => user.username === name);
+
+  if(foundUser && password === foundUser.password) {
+    res.status(201).json({name: foundUser.username, id: foundUser.id})
+  }
+  else {
+    res.status(401).json("Incorrect password or username.");
+  }
+});
+
 module.exports = router;
